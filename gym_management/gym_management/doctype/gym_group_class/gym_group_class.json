@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Class-{class_name}",
+ "creation": "2023-06-29 11:59:36.988795",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class_name",
+  "week_day",
+  "class_duration",
+  "booked",
+  "image",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Class Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "week_day",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Week Day",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class_duration",
+   "fieldtype": "Duration",
+   "in_list_view": 1,
+   "label": "Class Duration",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  },
+  {
+   "fieldname": "booked",
+   "fieldtype": "Select",
+   "label": "Booked",
+   "options": "No\nYes"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-29 15:40:52.572114",
+ "modified_by": "Administrator",
+ "module": "Gym Management",
+ "name": "Gym Group Class",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "group-class",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
